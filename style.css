@@ -10,13 +10,13 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #223243;
+    background: #222222;
 }
 
 .container {
     padding: 40px;
     border-radius: 20px;
-    border: 8px solid #223243;
+    border: 8px solid #222222;
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
     5px 5px 15px rgba(0, 0, 0, 0.35),
     inset -5px -5px 15px rgba(255, 255, 255, 0.1),
@@ -29,6 +29,16 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 25px;
+}
+.container .form.signin,
+.container.signinForm .form.signup
+{
+    display: none;
+
+}
+
+.container.signinForm .form.signin{
+    display: flex;
 }
 
 .container .form h2 {
@@ -46,7 +56,7 @@ body {
     padding: 12px 10px 12px 48px;
     border: none;
     width: 100%;
-    background: #223243;
+    background: #222222;
     border: 1px solid rgba(0, 0, 0, 0.1);
     color: #fff;
     font-weight: 300;
@@ -73,9 +83,9 @@ body {
 
 .container .form .inputBox input:valid ~ span,
 .container .form .inputBox input:focus ~ span{
-    color: #00dfc4;
-border: 1px solid #00dfc4;
-    background: #223243;
+    color: rgb(199, 92, 252);
+border: 1px solid rgb(199, 92, 252);
+    background: #222222;
     transform: translateX(25px) translateY(-7px);
     font-size: 0.6em;
     padding: 0 8px;
@@ -86,7 +96,7 @@ border: 1px solid #00dfc4;
 .container .form .inputBox input:valid,
 .container .form .inputBox input:focus
 {
-    border: 1px solid #00dfc4;
+    border: 1px solid #c75cfc;
 }
 
 
@@ -97,14 +107,14 @@ border: 1px solid #00dfc4;
     width: 25px;
     padding-right: 8px;
     padding: 2px 0;
-    color: #00dfc4;
-    border-right: 1px solid #00dfc4;
+    color: #c75cfc;
+    border-right: 1px solid #c75cfc;
 }
 
 .container .form .inputBox input[type="submit"]
 {
-    background: #00dfc4;
-    color: #223243;
+    background: #c75cfc;
+    color: #222222;
     padding: 10px 0;
     font-weight: 500;
     cursor: pointer;
